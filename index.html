@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黃昱翔的自動化 作品集</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- ===================== -->
+    <!-- Navbar 導覽列 -->
+    <!-- bg-dark：深色背景 -->
+    <!-- navbar-dark：文字變淺 -->
+    <!-- p-3：內距 -->
+    <!-- navbar-expand-lg：大螢幕展開，小螢幕收合 -->
+    <!-- ===================== -->
+
+    <nav class="navbar bg-dark navbar-dark p-3 navbar-expand-lg">
+        <div class="container">
+
+        
+            <a href="#" class="navbar-brand">
+                黃昱翔的作品集
+            </a>
+
+            <!-- 手機版選單按鈕 --> 
+            <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"> 
+                     
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">關於我</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">作品</a>      
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">聯絡方式</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ===================== -->
+    <!-- 頁面標題 -->
+    <!-- ===================== -->
+
+
+
+    <section id="about" class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">關於我</h2>
+
+            <div class="row align-items-center">
+
+                <!-- 個人介紹 -->
+                <div class="col-lg-7">
+
+                    <h3 class="mb-3">黃昱翔</h3>
+
+                    <div class="mb-4 p-3 bg-white border-start border-4">
+                        <strong>
+                            發現問題 → 思考流程 → 撰寫程式 → 測試結果 → 持續優化
+                        </strong>
+                    </div>
+
+                    <p class="text-muted">
+                        畢業於開南大學空運管理學系，目前工作內容以人資及品保相關業務為主。
+                    </p>
+
+                    <p class="text-muted">
+                        平時利用工作之餘學習 Python，主要接觸
+                        Pandas、xlwings、openpyxl、docxtpl 及 Playwright，
+                        並將所學應用於資料整理、Excel 自動化及日常工作流程。
+                    </p>
+
+                    <p class="text-muted">
+                        希望未來能結合行政實務、資料處理與 Python 自動化，
+                        將重複性工作整理成更有效率的流程。
+                    </p>
+
+                </div>
+
+
+
+
+                <!-- 個人資訊 -->
+                <div class="col-lg-5">
+
+                    <div class="card border-0 shadow-sm">
+
+                        <div class="card-body">
+
+                            <h5 class="mb-3">基本資訊</h5>
+
+                            <p class="mb-2">
+                                <strong>學歷</strong><br>
+                                開南大學 空運管理學系
+                            </p>
+
+                            <p class="mb-2">
+                                <strong>目前工作</strong><br>
+                                人資、品保相關業務
+                            </p>
+
+                            <p class="mb-0">
+                                <strong>興趣</strong><br>
+                                拳擊、運動、健身
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="container py-5" id="projects">
+
+        <h2 class="text-center mb-4"> 
+            作品 
+        </h2>
+    
+        <div class="row g-4">
+                
+            <div class="col-sm-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                                加班單明細表
+                        </h5>
+                        <p class="card-text">
+                                取得檔案 → 清理資料 → 員工比對 → 建立樞紐 → 統計報表 → 輸出 Excel
+                        </p>
+                        <button type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#overtimeCode">
+                                查看程式碼
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-sm-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">清潔檢核表</h5>
+                            <p class="card-text">工作日日期自動產生，並同步更新多個工作表</p>
+                            <button type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#cleancheck">
+                                查看程式碼
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-sm-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">課程製作與簽到單</h5>
+                            <p class="card-text">Excel 資料 → Word 範本 → 課程文件自動產生</p>
+                            <button type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#course">
+                                查看程式碼
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Playwright 自動化</h5>
+                                <p class="card-text">
+                                    將日常網頁操作流程自動化，從登入系統、進入假勤管理、設定查詢條件，到下載 Excel 檔案，減少重複性的人工操作
+                                </p>
+                                <button type="button"
+                                    class="btn btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#browse">
+                                    查看程式碼
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="overtimeCode" tabindex="-1">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">加班單明細表 程式碼</h5>
+
+                                <button type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal">
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <pre><code>
+import xlwings as xw
+import pandas as pd
+import calendar
+from pathlib import Path
+from datetime import date, timedelta
+
+download_path = Path.home() / "Downloads"
+
+file_path = max(download_path.glob("*.xlsx"), key=lambda f: f.stat().st_atime)
+
+wb = xw.Book(file_path)
+ws = wb.sheets["工作表1"]
+app = xw.App(visible=True, add_book=False)
+
+
+# 取消合併儲存格
+ws.range("A1:R2").unmerge()
+
+# 清除A4:A10的內容
+ws.range("A4:A10").clear_contents()
+
+
+cols_to_delete = ["R", "Q", "M", "L", "G", "F", "E", "B"]
+for col in cols_to_delete:
+    ws.range(f"{col}:{col}").delete()
+
+
+ws.range("A:Z").api.Insert(0)
+
+
+df = pd.read_excel(file_path, header=12)
+
+
+df["加班歸屬日"] = pd.to_datetime(df["加班歸屬日"])
+df["加班起始時間"] = pd.to_datetime(df["加班起始時間"])
+df["加班截止時間"] = pd.to_datetime(df["加班截止時間"])
+
+
+cross_month = df[df["加班歸屬日"].dt.month != df["加班起始時間"].dt.month]
+
+print("\n跨日加班資料:")
+print(cross_month)
+
+
+cross_month_hours = cross_month["加班計算時數"].sum()
+
+print(f"\n跨月加班時數:" f"{cross_month_hours:g}H")
+
+
+year = 2026
+month = 9
+
+month_start = date(year, month, 1)
+
+last_day = calendar.monthrange(year, month)[1]
+month_end = date(year, month, last_day)
+
+periods = []
+
+current_start = month_start
+
+while current_start <= month_end:
+    days_until_friday = 4 - current_start.weekday()
+
+    if days_until_friday < 0:
+        days_until_friday += 7
+
+    current_end = current_start + timedelta(days=days_until_friday)
+
+    if current_end > month_end:
+        current_end = month_end
+
+    periods.append((current_start, current_end))
+
+    current_start = current_end + timedelta(days=1)
+
+
+r = [["日期", "時數", "差異"]]
+
+
+weekly_total = 0
+
+for start, end in periods:
+    data = df[
+        (df["加班歸屬日"] >= pd.Timestamp(start))
+        & (df["加班歸屬日"] <= pd.Timestamp(end))
+    ]
+
+    total_hours = data["加班計算時數"].sum()
+
+    if start == month_start:
+        total_hours += cross_month_hours
+
+        date_text = (
+            f"{start.strftime('%m/%d')}~"
+            f"{end.strftime('%m/%d')}"
+            f" (含跨日加班時數) "
+        )
+    else:
+        date_text = f"{start.strftime('%m/%d')}~" f"{end.strftime('%m/%d')}"
+
+    weekly_total += total_hours
+
+    r.append([date_text, total_hours, ""])
+
+    print(f"{date_text}: " f"{total_hours:g} H")
+
+    grand_total = weekly_total
+
+r.append(["總計加班時數", grand_total, ""])
+
+start_row = 17
+
+last_row = start_row + len(r) - 1
+
+ws.range(f"A{start_row}:C{last_row}").value = r
+
+
+table_range = ws.range(f"A{start_row}:C{last_row}").expand()
+
+for border_id in range(7, 13):
+    table_range.api.Borders(border_id).LineStyle = 1
+    table_range.api.Borders(border_id).Weight = 2
+
+ws.range("A16:C16").merge()
+ws.range("A16:C16").value = "每週實際加班統計時數"
+target_range = ws.range((16, 1), (last_row, 3))
+
+target_range.api.Font.Name = "DFKai-SB"  # 標楷體
+target_range.api.HorizontalAlignment = -4108  # xlCenter
+target_range.api.VerticalAlignment = -4108  # xlCenter
+
+
+title_range = ws.range("A16:C16")
+for border_id in range(7, 13):
+    title_range.api.Borders(border_id).LineStyle = 1
+    title_range.api.Borders(border_id).Weight = 2
+
+
+print(f"\n總計加班時數:{grand_total:g} H")
+
+
+# 名單
+data = [
+    ["員工編號", "中文姓名", "-SM"],
+    ["145072", "陳可廸", "SM"],
+    ["145073", "陳聖諺", "SM"],
+    ["145110", "陳修德", "SM"],
+    ["145111", "葉建宏", "SM"],
+    ["145158", "林時平", "SM"],
+    ["145160", "黃子宜", "SM"],
+    ["145162", "莊宗峰", "SM"],
+    ["145199", "張倢銘", "SM"],
+    ["145300", "李聰義", "SM"],
+    ["145233", "李恭欣", "SM"],
+    ["145271", "蔡佳賓", "SM"],
+    ["145276", "曲承韋", "SM"],
+    ["145288", "楊家維", "SM"],
+    ["145335", "江冠緯", "SM"],
+    ["145388", "陳致瑋", "SM"],
+    ["145422", "阮佩瑩", "SM"],
+    ["145437", "王啟昊", "SM"],
+    ["145468", "劉上得", "SM"],
+]
+
+# 寫入名單
+ws.range("BA1:BC22").value = data
+
+# 找原始資料最後一列（用C欄員編）
+last_row = ws.range("AB" + str(ws.cells.last_cell.row)).end("up").row
+
+# 讀原始資料（A13開始）
+rows = ws.range(f"AA13:AC{last_row}").value
+
+# 建立員編 set（跳過標題）
+sm_set = {str(r[0]) for r in data[1:] if r[0]}
+
+# 修改 A欄
+for r in rows:
+    emp_id = r[1]  # C欄
+
+    if emp_id and str(emp_id) in sm_set:
+        r[0] = str(r[0]) + "-SM"
+
+# 寫回
+ws.range(f"AA13:AC{last_row}").value = rows
+
+
+# 動態抓資料區範圍
+start_cell = ws.range("AA13")
+last_row = start_cell.end("down").row
+last_col = start_cell.end("right").column
+source_range = ws.range((13, 27), (last_row, last_col))
+
+# 建立第一樞紐分析表-U13
+pivot_table_location1 = ws.range("T13")
+pc1 = wb.api.PivotCaches().Create(SourceType=1, SourceData=source_range.api, Version=6)
+pt1 = pc1.CreatePivotTable(
+    TableDestination=pivot_table_location1.api, TableName="樞紐分析表1"
+)
+pt1 = ws.api.PivotTables("樞紐分析表1")
+
+# 設定樞紐分析表1欄位
+pt1.PivotFields("部門代碼").Orientation = 1
+pt1.PivotFields("部門代碼").Position = 1
+pt1.PivotFields("員工編號").Orientation = 1
+pt1.PivotFields("員工編號").Position = 2
+pt1.PivotFields("中文姓名").Orientation = 1
+pt1.PivotFields("中文姓名").Position = 3
+
+pt1.AddDataField(pt1.PivotFields("支領加班費時數"), "加總 - 支領加班費時數", -4157)
+pt1.AddDataField(pt1.PivotFields("抵換補休時數"), "加總 - 抵換補休時數", -4157)
+pt1.AddDataField(pt1.PivotFields("加班計算時數"), "加總 - 加班計算時數", -4157)
+
+try:
+    pt1.PivotFields("部門代碼").PivotItems("(blank)").Visible = False
+except:
+    pass
+# 以表格顯示
+pt1.RowAxisLayout(1)
+# 重複所有項目標籤
+pt1.RepeatAllLabels(True)
+# 不顯示小記
+for field_name in ["部門代碼", "員工編號", "中文姓名"]:
+    pf = pt1.PivotFields(field_name)
+    pf.Subtotals = [False] * 12
+    # 不顯示+/-按鈕
+    pt1.ShowDrillIndicators = False
+
+
+# 建立第二樞紐分析表在O13
+pivot_table_location2 = ws.range("O13")
+pc2 = wb.api.PivotCaches().Create(SourceType=1, SourceData=source_range.api, Version=6)
+pt2 = pc2.CreatePivotTable(
+    TableDestination=pivot_table_location2.api, TableName="樞紐分析表2"
+)
+pt2 = ws.api.PivotTables("樞紐分析表2")
+
+pt2.PivotFields("部門代碼").Orientation = 1
+pt2.PivotFields("部門代碼").Position = 1
+
+pt2.AddDataField(pt2.PivotFields("加班計算時數"), "加總 - 加班計算時數", -4157)
+pt2.AddDataField(pt2.PivotFields("支領加班費時數"), "加總 - 支領加班費時數", -4157)
+pt2.AddDataField(pt2.PivotFields("抵換補休時數"), "加總 - 抵換補休時數", -4157)
+
+try:
+    pt2.PivotFields("部門代碼").PivotItems("(blank)").Visible = False
+except:
+    pass
+
+# 以表格顯示
+pt2.RowAxisLayout(1)
+
+# 插入總計公式與文字
+ws.range("AA5").value = "平日加班"
+ws.range("AA6").value = "假日/休息日加班"
+ws.range("AA7").value = "節日加班"
+ws.range("AA9").value = "總計："
+
+ws.range("AB5").formula = "=SUMIF($AD$14:AD10000,AA5,$AH$14:AH10000)"
+ws.range("AB6").formula = "=SUMIF($AD$14:AD10000,AA6,$AH$14:AH10000)"
+ws.range("AB7").formula = "=SUMIF($AD$14:AD10000,AA7,$AH$14:AH10000)"
+ws.range("AB9").formula = "=SUM($AB$5:$AB$7)"
+
+ws.range("AA9").api.Font.Color = 255
+ws.range("AB9").api.Font.Color = 255
+
+# 最後刪除 H, I, Q 欄位
+# for col in ["Q", "I", "H"]:
+#     ws.range(f"{col}:{col}").delete()
+
+
+# 設定範圍
+start_row = 14
+last_row = ws.range("Y" + str(ws.cells.last_cell.row)).end("up").row
+range_p = ws.range(f"Y{start_row}:Y{last_row}")
+
+# 清除原本背景色
+for cell in range_p:
+    cell.color = None
+
+# 超過時數設定顏色
+for cell in range_p:
+    try:
+        val = float(cell.value)
+        if 35 <= val <= 60:
+            cell.color = (255, 15, 15)  # 紅色
+            cell.font.bold = True
+        elif 30 <= val <= 34.5:
+            cell.color = (250, 255, 15)  # 黃色
+            cell.font.bold = True
+        elif 25 <= val <= 29.5:
+            cell.color = (80, 255, 70)  # 綠色
+            cell.font.bold = True
+    except:
+        pass  # 忽略無法轉成float的儲存格
+
+# 讀原始資料從O13
+data = ws.range("O13").expand().value
+df = pd.DataFrame(data[1:], columns=data[0])
+
+# 清除部門代碼空白
+df["部門代碼"] = df["部門代碼"].str.strip()
+
+# 中英文部門對照表
+dept_mapping = {
+    "GSE": "設施室-GSE",
+    "AMD": "航修部-AMD",
+    "AMD-SM": "航修部-AMD(結構工廠)",
+    "EPD": "計畫部-EPD",
+    "HSE": "職安室-HSE",
+    "QAD": "品保部-QAD",
+    "QCD": "品管部-QCD",
+    "HRD": "人資部-HRD",
+    "LGE": "採購室-LGE",
+    "ITE": "資訊室-ITE",
+    "FND": "財務部-FND",
+    "總計": "總計",
+}
+
+# 替換為中文部門名，並去除非對照表部門
+df["部門代碼"] = df["部門代碼"].map(dept_mapping)
+df.dropna(subset=["部門代碼"], inplace=True)
+
+# 設定部門代碼為索引
+df.set_index("部門代碼", inplace=True)
+
+# 清理欄位名稱並重新命名
+df.columns = [col.replace("加總 - ", "") for col in df.columns]
+df = df.rename(
+    columns={
+        "加班計算時數": "加班總時數",
+        "支領加班費時數": "支領加班費時數",
+        "抵換補休時數": "轉補休時數",
+    }
+)
+
+# 移除全部為 0 或 NaN 的部門
+df = df[df.sum(axis=1) != 0]
+
+# 指定輸出順序（只選有資料的）
+desired_order = [
+    "設施室-GSE",
+    "航修部-AMD",
+    "航修部-AMD(結構工廠)",
+    "計畫部-EPD",
+    "職安室-HSE",
+    "品保部-QAD",
+    "品管部-QCD",
+    "人資部-HRD",
+    "採購室-LGE",
+    "資訊室-ITE",
+    "財務部-FND",
+    "總計",
+]
+
+df = df.loc[[dept for dept in desired_order if dept in df.index]]
+
+# 轉置為橫向資料列變成欄
+df = df.T
+
+# 回寫Excel從A8開始
+start_cell = "A8"
+ws.range(start_cell).value = [
+    [""] + list(df.columns)
+] + df.reset_index().values.tolist()
+ws.autofit()
+
+# 框線處理
+table_range = ws.range(start_cell).expand()
+for border_id in range(7, 13):
+    table_range.api.Borders(border_id).LineStyle = 1
+    table_range.api.Borders(border_id).Weight = 2
+
+last_row = ws.range("A" + str(ws.cells.last_cell.row)).end("up").row
+
+# 明確指定範圍：A11 到 M11（A = col 1, C = col 14）
+target_range = ws.range((8, 1), (11, 13))
+
+# 設定標楷體與置中
+target_range.api.Font.Name = "DFKai-SB"  # 標楷體
+target_range.api.HorizontalAlignment = -4108  # xlCenter
+target_range.api.VerticalAlignment = -4108  # xlCenter
+
+# 隱藏欄位
+# ws.range(
+#     "AX:AZ"
+# ).api.EntireColumn.Hidden = True
+
+
+ws.range("A1:H4").merge()
+ws.range("A1").value = ("備註：\n"
+"一、每週加班時數依實際加班歸屬統計\n"
+"二、如當週加班時數較前週有明顯增減，或異常情況如颱風出勤、專案趕工等 ，請於 Email 註明異常原因並回傳人資部")
+
+Remark_range1 = ws.range("A1")
+Remark_range1.api.Font.Name = "DFKai-SB"
+Remark_range1.api.HorizontalAlignment = -4131
+Remark_range1.api.VerticalAlignment = -4108
+
+for border_id in range(7, 13):
+    ws.range("A1:H4").api.Borders(border_id).LineStyle = 1
+    ws.range("A1:H4").api.Borders(border_id).Weight = 2
+
+# ws.range("AA12").value = ws.range("A7").value
+ws.range("A7:J7").merge()
+ws.range("A7").value = "=AA12"
+for border_id in range(7, 13):
+    ws.range("A7:J7").api.Borders(border_id).LineStyle = 1
+    ws.range("A7:J7").api.Borders(border_id).Weight = 2
+
+Remark_range2 = ws.range("A7:J7")
+Remark_range2.api.Font.Name = "DFKai-SB"
+Remark_range2.api.HorizontalAlignment = -4131
+Remark_range2.api.VerticalAlignment = -4108
+
+
+ws.range("AX:AZ").api.EntireColumn.Delete()
+
+output_file = Path.home() / "Desktop" / "08月加班明細表.xlsx"
+# # wb.save(output_file)
+
+# print("OK")
+                                </code></pre>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="cleancheck" tabindex="-1">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">清潔檢核表 程式碼</h5>
+
+                                <button type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal">
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <pre><code>
+import pandas as pd
+import xlwings as xw
+from pandas.tseries.offsets import CustomBusinessDay
+
+file_path = r'C:\Users\145418\Desktop\SOP列印_製作\清潔檢核表.xlsx'
+wb = xw.Book(file_path)
+
+#只有一個工作表
+#ws = wb.sheets['1']
+
+#每個工作表
+sheet_names = [str(i) for i in range (1,17)]
+app = xw.App(visible=True,add_book=False)
+
+MWD = CustomBusinessDay(weekmask='Mon Tue Wed Thu Fri')
+#weekmask指定要哪一日
+
+df = pd.date_range(
+    '2026-09-01',
+    '2026-09-30',
+    freq=MWD
+)
+#起點從幾月幾號開始到幾月幾號結束
+
+week= ['一','二','三','四','五']
+#回傳dates_list
+
+dates_list = [[d.strftime('%Y-%m-%d')+ f"({week[d.dayofweek]})"] for d in df]
+#%Y-%m-%d-%A
+# %Y 年
+# %m 月
+# %d 日
+# %a 星期(英文全名)
+# %A 星期(英文簡稱)
+#f"({week[d.dayofweek]})" 2026/1/1(四) 會回寫"week"
+
+#每個工作表回傳
+for name in sheet_names:
+    ws = wb.sheets[name]
+    ws.range("A3").value = dates_list
+
+#寫入範圍
+                                </code></pre>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="course" tabindex="-1">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">課程製作與簽到單 程式碼</h5>
+
+                                <button type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal">
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <pre><code>
+# 讀取 Excel 用
+import pandas as pd
+
+# 將 Word 範本中的 {{變數}} 替換成資料
+from docxtpl import DocxTemplate
+
+# 處理特殊字元
+import re
+
+# 日期轉換與日期加減運算
+from datetime import datetime, timedelta
+
+# 讀取課程資料 Excel
+course_df = pd.read_excel(r"C:\Users\PC220026\Desktop\製作日誌_簽到\課程代碼.xlsx")
+
+# 讀取員工資料 Excel
+employee_df = pd.read_excel(r"C:\Users\PC220026\Desktop\製作日誌_簽到\中英文姓名.xlsx")
+
+
+# 去除欄位前後空白
+# 避免出現「課程代碼 」和「課程代碼」不同造成錯誤
+course_df.columns = course_df.columns.str.strip()
+employee_df.columns = employee_df.columns.str.strip()
+
+
+# 使用者輸入資料
+input_code = input("Please Key code:").strip()
+input_date = input("Please Key Date: (EX: YYYY/MM/DD~YYYY/MM/DD):").strip()
+course_classroom = input("Please Key classroom:").strip()
+course_instructor = input("Please Key instructor:").strip()
+# input_number = input("Please Key number:").strip()
+
+# 將多人員工號拆成清單
+# 例如：
+# 145001,145002,145003
+# 變成：
+# ['145001','145002','145003']
+# number_list = [
+#     n.strip()
+#     for n in input_number.split(",")
+# ]
+
+student_df = pd.read_excel(r"C:\Users\PC220026\Desktop\上傳受訓名單.xlsx")
+
+number_list = student_df["員工號"].astype(str).str.strip().tolist()
+
+
+# 檔名不能有 / : * ? 等特殊符號
+# 所以把它換成 -
+safe_course_date = re.sub(r'[\\/:*?"<>|]', "-", input_date)
+
+# safe_input_number = re.sub(
+#     r'[\\/:*?"<>|]',
+#     '-',
+#     input_number
+# )
+
+
+# 依課程代碼查詢課程資料
+course = course_df[course_df["課程代碼"].astype(str).str.strip() == input_code]
+
+# 找不到課程就結束，不會產生Word
+# if course.empty:
+#     print("No Found")
+#     exit()
+
+if course.empty:
+    print("Course Not Found")
+
+    course_name = input("Please Key Course Name").strip()
+    course_code = input_code
+    Objective = ""
+else:
+
+    # 取得第一筆符合的課程資料
+    course_name = course.iloc[0]["課程名稱"]
+    course_code = course.iloc[0]["課程代碼"]
+    Objective = course.iloc[0]["課程摘要"]
+
+
+print("\n找到課程:")
+print(f"課程名稱：{course_name}")
+print(f"課程代碼：{course_code}")
+print(f"課程摘要:{Objective}")
+print(f"開課時間：{input_date}")
+print(f"地點：{course_classroom}")
+print(f"講師：{course_instructor}")
+
+
+# 載入課程日誌 Word 範本
+Note_doc = DocxTemplate(r"C:\Users\PC220026\Desktop\製作日誌_簽到\課程日誌.docx")
+
+# 載入簽到單 Word 範本
+Sign_doc = DocxTemplate(r"C:\Users\PC220026\Desktop\製作日誌_簽到\課程簽到.docx")
+
+
+# 課程日誌使用的資料
+# 對應 Word 裡的：
+# {{course_name}}
+# {{course_code}}
+# ...
+context1 = {
+    "course_name": course_name,
+    "course_code": course_code,
+    "course_date": input_date,
+    "course_classroom": course_classroom,
+    "course_instructor": course_instructor,
+    "Objective": Objective,
+}
+# 將資料帶入課程日誌
+Note_doc.render(context1)
+
+# 課程日誌輸出檔名
+Joutput_file = rf"C:\Users\PC220026\Desktop\製作日誌_簽到\{course_code}_{safe_course_date}_課程日誌.docx"
+
+Note_doc.save(Joutput_file)
+
+
+# 每 12 人產生一份簽到單
+for page in range(0, len(number_list), 12):
+
+    Sign_doc = DocxTemplate(r"C:\Users\PC220026\Desktop\製作日誌_簽到\課程簽到.docx")
+
+    # 取出本頁學員
+    current_students = number_list[page : page + 12]
+
+    # 簽到單使用的資料
+    context2 = {
+        "course_name": course_name,
+        "course_code": course_code,
+        "course_date": input_date,
+        "course_classroom": course_classroom,
+    }
+
+    # 處理 12 位學員資料
+    for i in range(12):
+
+        # 有輸入員工號才查詢
+        if i < len(current_students):
+            emp_no = str(current_students[i]).strip()
+            employee = employee_df[
+                employee_df["員工號"].astype(str).str.strip() == emp_no
+            ]
+
+            # 找到員工
+            if not employee.empty:
+                full_name = employee.iloc[0]["中英文姓名"]
+
+            # 找不到員工
+            else:
+                full_name = "No Found"
+
+        # 超過輸入人數就留空白
+        else:
+            full_name = ""
+
+        # 建立：
+        # number1
+        # number2
+        # number3
+        # ...
+        context2[f"number{i+1}"] = full_name
+
+        # 日期轉換函式
+        def get_days(time_text):
+
+            result = []
+
+            # 單一天日期
+            # 例如：
+            # 2026/06/18
+            if "~" not in time_text:
+
+                d = datetime.strptime(time_text, "%Y/%m/%d")
+
+                result.append(d.strftime("%d/%b").upper())
+
+                return result
+
+            # 日期區間
+            # 例如：
+            # 2026/06/18~2026/06/28
+            start_str, end_str = time_text.split("~")
+
+            start_date = datetime.strptime(start_str.strip(), "%Y/%m/%d")
+
+            end_date = datetime.strptime(end_str.strip(), "%Y/%m/%d")
+
+            current = start_date
+
+            # 從開始日期跑到結束日期
+            while current <= end_date:
+
+                # weekday()
+                # 0=星期一
+                # 1=星期二
+                # ...
+                # 5=星期六
+                # 6=星期日
+
+                # 只保留平日
+                if current.weekday() < 5:
+
+                    result.append(current.strftime("%d/%b").upper())
+
+                # 日期加一天
+                current += timedelta(days=1)
+
+            return result
+
+        # 取得日期清單
+        date_list = get_days(input_date)
+
+        # 寫入 Date1 ~ Date10
+        for i in range(10):
+
+            if i < len(date_list):
+
+                context2[f"Date{i+1}"] = date_list[i]
+
+            else:
+
+                context2[f"Date{i+1}"] = ""
+
+    # 將資料帶入簽到單
+    Sign_doc.render(context2)
+
+    # 簽到單輸出檔名
+    Aoutput_file = rf"C:\Users\PC220026\Desktop\\製作日誌_簽到\{course_code}_{safe_course_date}_課程簽到_{page//12+1}.docx"
+
+    # 儲存 Word
+    Sign_doc.save(Aoutput_file)
+
+print("\nOK!")
+print(Joutput_file)
+print(Aoutput_file)
+# 顯示實際產生的日期
+# print(date_list)
+
+
+
+course = course_df[
+    course_df["課程代碼"].astype(str).str.strip()
+    == input_code
+]
+# 讀取課程資料
+
+Note_doc.render(context1)
+Note_doc.save(Joutput_file)
+# 套用資料至 Word 範本
+                                </code></pre>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="browse" tabindex="-1">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">Playwright 自動化 程式碼</h5>
+
+                                <button type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal">
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <pre><code>
+from playwright.sync_api import sync_playwright
+import Code
+
+with sync_playwright() as p:
+
+    brower = p.chromium.launch(headless=False)
+    # True 是背景執行，沒有畫面
+
+    page = brower.new_page()
+    # 建立新分頁，像Chrom+新增分頁
+
+
+    page.goto(Code.LOGIN_URL)
+    # page.goto("https://eip.taiwan-tameco.com/UOF/")
+    # 載入網址網頁
+
+    page.get_by_role("textbox", name="帳號").fill(Code.USERNAME)
+    page.get_by_role("textbox", name="密碼").fill(Code.PASSWORD)
+    page.get_by_role("button", name="登入").click()
+    page.locator("#Frame1").content_frame.get_by_role("link", name="假勤管理").click()
+    page.locator("#Frame1").content_frame.get_by_role("link", name="» 請假記錄查詢").click()
+    page.locator("#Frame1").content_frame.locator("#ctl00_ctl00_ContentPlaceHolder1_RightContentPlaceHolder_rdLeaveDateStart_wrapper").get_by_role("cell", name="Open the calendar popup.").click()
+    page.locator("#Frame1").content_frame.get_by_role("button", name="Today").click()
+    page.locator("#Frame1").content_frame.locator("#ctl00_ctl00_ContentPlaceHolder1_RightContentPlaceHolder_rdLeaveDateEnd_popupButton").click()
+    page.locator("#Frame1").content_frame.get_by_role("button", name="Today").click()
+    page.locator("#Frame1").content_frame.get_by_role("checkbox", name="包含子部門").check()
+    page.locator("#Frame1").content_frame.get_by_text("總經理室CEO").click()
+    with page.expect_download() as download_info:
+        page.locator("#Frame1").content_frame.get_by_role("link", name="Export").first.click()
+    download = download_info.value
+
+    
+
+    print("下載檔名：", download.suggested_filename)
+
+    download.save_as(r"C:\Users\145418\Downloads\123.xlsx")
+
+
+
+    page.wait_for_load_state("networkidle")
+    # 等網站全部載入完成
+
+
+    input("網站已開啟，按 Enter 關閉...")
+
+    brower.close()
+    # 關閉瀏覽器
+
+
+    #### 筆記
+
+    # print(page.title())
+    # 取得網頁標題
+
+    # print(page.url)
+    # 取得網址
+
+    # page.screenshot(path="google.png")
+    # 截圖
+
+    # browser.new_context(accept_downloads=True)
+    # 是允許下載，不是指定存檔位置
+
+
+    # page.expect_download()        
+    # 等待下載發生
+
+    # download_info.value           
+    # 取得下載物件
+
+    # download.suggested_filename   
+    # 取得網站提供的檔名
+    
+    # download.save_as()            
+    # 指定實際存檔位置
+                                </code></pre>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5" id="contact">
+
+        <h2 class="text-center mb-4">
+            聯絡方式
+        </h2>
+
+        <p class="text-center">
+            黃昱翔 Ken Huang<br>
+            <a href="mailto:slhyrebmnu223146@gmail.com">
+                slhyrebmnu223146@gmail.com
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- ===================== -->
+    <!-- Bootstrap JS -->
+    <!-- ===================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
